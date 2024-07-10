@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 
 const AllBlogs = () => {
   return (
-    <div className='mt-8 w-full lg:w-1/3 px-4 lg:px-0'>
+    <div className='mt-8 w-full  px-4 lg:px-0'>
       <h1 className='text-2xl font-semibold'>All Blog Posts</h1>
 
       <div className="w-full h-[300px] relative mt-6">
