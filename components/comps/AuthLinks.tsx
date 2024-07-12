@@ -4,7 +4,7 @@ import React from 'react';
 
 const AuthLinks = () => {
   return (
-    <div className=' h-full flex flex-col items-center gap-8'>
+    <div className='h-full flex items-center gap-8'>
       <SignedOut>
         <Link href="/sign-in">Login</Link>
       </SignedOut>

@@ -21,7 +21,7 @@ const UserSchema = new Schema({
         required: true,
 
     },
-    fiestName: {
+    firstName: {
         type: String,
 
     },
@@ -31,5 +31,5 @@ const UserSchema = new Schema({
     },
 })
 
-const User = models?.User || model("USer",UserSchema)
+const User = models?.User || model("User",UserSchema)
 export default User

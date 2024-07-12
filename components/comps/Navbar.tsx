@@ -4,7 +4,7 @@ import { items } from "@/constants/NavL";
 import { ModeToggle } from "./Toggle";
 import Hamburger from "./Hamburger";
 import AuthLinks from "./AuthLinks";
-import { SignedIn, UserButton, UserProfile } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
 
 
 
@@ -21,10 +21,10 @@ const Navbar = () => {
           <ModeToggle/>
           <Hamburger/>
         <div className="max-md:hidden flex items-center gap-8">
-        <div className="border-[2px] rounded-3xl h-fit w-fit flex items-center">
+        <div className=" rounded-3xl h-fit w-fit flex items-center">
           <UserButton/>
        </div>
-          <Link href='/Blog' className="font-extrabold underline">Blog</Link>
+          <Link href='/Blog' className="font-extrabold">Blog</Link>
           {items.map((i) => (
             <Link href={`/${i.name}`} key={i.name}>{i.name}</Link>
           ))}
